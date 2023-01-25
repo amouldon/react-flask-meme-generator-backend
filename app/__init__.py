@@ -10,7 +10,6 @@ app = Flask(__name__)
 CORS(app)
 
 app.register_blueprint(api)
-
 app.config.from_object(Config)
 db.init_app(app)
 ma.init_app(app)
